@@ -4,9 +4,7 @@
 
 <h1 align="center">Task Manager App</h1>
 
-<p align="center">
-  🚀 A clean and modern task management app built with React + TypeScript + Tailwind CSS
-</p>
+<p align="center">🚀 A clean and modern task management app built with React + TypeScript + Tailwind CSS</p>
 
 <p align="center">
   <img alt="React" src="https://img.shields.io/badge/React-18-blue?logo=react" />
@@ -26,123 +24,114 @@
 - ⚡ Priority & status tracking (To-Do, In Progress, Done)
 - 🌙 Dark / Light theme toggle
 - 📱 Fully responsive design (Desktop + Mobile)
-- 📧 Advanced contact form with Email & WhatsApp integration
-- 🔐 Secure localStorage usage (no exposed keys)
+- 📧 Advanced contact form with EmailJS
+- 🔐 Secure localStorage usage (no exposed credentials)
 - 🚫 No external database needed (Bolt AI only)
 
 ---
 
-## 🛠️ Quick Start
+## 🚀 Quick Start to Live Link
 
-### 1. Clone & Install
+### 🔹 Clone & Install
 
 ```bash
-git clone https://github.com/your-dhruvgit-27/project-task-manager-app.git
-cd project-task-manager
+git clone https://github.com/dhruvgit-27/project-task-manager-app.git
+cd project-task-manager-app
 npm install
+```
 
-2. 🔐 Configure Environment Variables
-Create a .env file in the root directory and add the following:
+### 🔹 Configure Environment Variables
 
-env
-Copy
-Edit
+Create a `.env` file in the root directory and add:
+
+```env
 # EmailJS Configuration
 VITE_EMAILJS_SERVICE_ID=your_service_id
 VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key 
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
-3. 📧 EmailJS Setup
-Go to EmailJS.com
+### 🔹 EmailJS Setup
 
-Create an account and connect an email service (like Gmail)
+1. Go to [EmailJS.com](https://www.emailjs.com/)
+2. Create an account and connect an email service (Gmail, Outlook, etc.)
+3. Set up a template with these variables:
+   - `{{from_name}}, {{from_email}}, {{subject}}, {{message}}`
+4. Copy your Service ID, Template ID, and Public Key
+5. Paste them into your `.env` file
 
-Create an email template with the following fields:
+### 🔹 Run the App
 
-{{from_name}}, {{from_email}}, {{subject}}, {{message}}
-
-Copy your Service ID, Template ID, and Public Key
-
-Paste them into your .env file 
-
-4. ▶️ Run the App
+```bash
 npm run dev
+```
+
+### 🔹 Live Demo
+
+🌐 [**Click to Open the App**](https://project-task-manager-five.vercel.app/)
 
 ---
 
-## Or Simply Click the Link : https://project-task-manager-five.vercel.app/
+## 💌 Contact Form Highlights
+
+- ✅ Validates name, email, subject, and message fields
+- 📧 Sends formatted email to admin via EmailJS
+- 🎯 Success toast: “Your message has been sent successfully”
+- ⏳ Loading indicator while submitting
+- 🔁 Form clears after submission
+- ❌ Error toast on failure
 
 ---
 
-## 💌 Contact Form Features:
-
-✅ Validates name, email, subject, and message fields
-
-📧 Sends formatted email directly to admin via EmailJS
-
-🎯 Success toast: “Your message has been sent successfully”
-
-⏳ Submission loader + disabled state
-
-❌ Error toast on failure
-
-🔁 Clears form after successful submission
-
----
-
-## 🧰 Tech Stack:
-
+## 🧰 Tech Stack
 
 | Tech         | Description              |
-| ------------ | ------------------------ |
+|--------------|--------------------------|
 | React        | Frontend library         |
 | TypeScript   | Strongly typed JS        |
-| Vite         | Build tool for fast dev  |
-| TailwindCSS  | Utility-first styling    |
+| Vite         | Fast development tooling |
+| Tailwind CSS | Utility-first styling    |
 | React Router | Page routing             |
-| Lucide React | Icon library             |
-| EmailJS      | Contact form integration |
+| Lucide React | Icon set                 |
+| EmailJS      | Email integration        |
 
 ---
 
-## 🗂️ Project Structure:
+## 📁 Folder Structure
 
+```
 src/
 ├── components/      # Reusable UI components
-├── contexts/        # Global state/context
+├── contexts/        # Global app state
 ├── hooks/           # Custom React hooks
-├── services/        # EmailJS API handler
-├── types/           # TypeScript types
-├── utils/           # Utility functions
-└── main.tsx         # App entry point
+├── services/        # EmailJS handler
+├── types/           # TypeScript interfaces
+├── utils/           # Helper functions
+└── main.tsx         # Entry point
+```
 
 ---
 
-## 📞 Contact:
+## 📞 Contact Information
 
-📧 Email: contacttaskmanagerhere@gmail.com
-
-📱 Phone: +91 6395227506
-
----
-
-## 📎 Footer Links:
-
-Terms of Service
-
-Privacy Policy
-
-Contact Us
+- 📧 Email: [contacttaskmanagerhere@gmail.com](mailto:contacttaskmanagerhere@gmail.com)
+- 📱 Phone: [+91 6395227506](tel:+916395227506)
 
 ---
 
-## 📄 License:
+## 📎 Footer Links
 
-© 2025 Task Manager App. All rights reserved.
-Licensed under the MIT License.
+- 📄 [Terms of Service](#)
+- 🔐 [Privacy Policy](#)
+- 📬 [Contact Us](mailto:contacttaskmanagerhere@gmail.com)
 
-<p align="center"> Built using <strong>Bolt AI</strong> ⚡ — Fast. Serverless. Beautiful. </p> ```
+---
 
+## 📄 License
 
+© 2025 **Task Manager App**. All rights reserved.  
+Licensed under the **MIT License**.
 
+---
 
+<p align="center"><strong>Built using ⚡ Bolt AI</strong></p>
