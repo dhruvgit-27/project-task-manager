@@ -134,4 +134,4 @@ Licensed under the **MIT License**.
 
 ---
 
-<p align="center"><strong>Built using ⚡ Bolt AI</strong></p>
+
